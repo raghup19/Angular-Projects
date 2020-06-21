@@ -13,6 +13,10 @@ export class Test2Component implements OnInit {
 
   constructor() { }
 
+  ngIF=true;
+
+  displayName=false;
+
   ngOnInit(): void {
   }
 
