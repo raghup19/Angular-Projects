@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { FormsModule } from '@angular/forms';
 import { StructuralDirectiveComponent } from './structural-directive/structural-directive.component';
+import { BoostrapPracticeComponent } from './boostrap-practice/boostrap-practice.component';
+import { Test2Component } from './test2/test2.component';
+
 
 
 
@@ -13,7 +16,10 @@ import { StructuralDirectiveComponent } from './structural-directive/structural-
   declarations: [
     AppComponent,
     TestComponent,
-    StructuralDirectiveComponent
+    StructuralDirectiveComponent,
+    BoostrapPracticeComponent,
+    Test2Component
+    
   ],
   imports: [
     BrowserModule,

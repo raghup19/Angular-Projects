@@ -1,0 +1,36 @@
+<!-- Event binding
+
+<div class="container-fluid">
+    <div class="row">
+        <button (click)=onClick($event)>click me</button>
+    </div>
+</div> -->
+
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- Template reference variable
+
+<div class="container-fluid">
+    <div class="row">
+        <input #templateReferenceVariable type="text">
+        <button (click)=onClickofInput(templateReferenceVariable.value)>Log</button>
+    </div>
+    <div class="row">
+        <input #templateReferenceVariable1 type="text">
+        <button (click)=onClickOfInput1(templateReferenceVariable1)>Log</button>
+    </div>
+</div> -->
+
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+<!-- Two way binding
+
+<div class="container-fluid">
+    <div class="row">
+        <input [(ngModel)]="name" type="text">
+    </div>
+    <div class="row">
+        {{name}}
+    </div>
+</div> -->
+
+<!-- --------------------------------------------------------------------------------------------------------------------- -->

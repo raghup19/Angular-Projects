@@ -5,97 +5,79 @@ import { Component, OnInit } from '@angular/core';
   //selector:'.app-test',
   //selector: '[app-test]',
    template: `
-  //   <div>Inside the Testing component</div>
-  //   <!-- //String Interpolation
-  //   <h4>Welcome {{name }}</h4>
-  //   <h4>{{"Welcome "+name  }}</h4>
-  //   <h4>2+2</h4>
-  //   <h4>{{2+2}}</h4>
-  //   <h4>{{name.length}}</h4>
-  //   <h4>{{name.toUpperCase()}}</h4>
-  //   <h3>{{greetUser()}}</h3>
+    <div>Inside the Testing component</div>
+    /* String Interpolation
+    <h4>Welcome {{name }}</h4>
+    <h4>{{"Welcome "+name  }}</h4>
+    <h4>2+2</h4>
+    <h4>{{2+2}}</h4>
+    <h4>{{name.length}}</h4>
+    <h4>{{name.toUpperCase()}}</h4>
+    <h3>{{greetUser()}}</h3> */
 
   
-  //   //Property Binding
-  //   <input type="text" value="Raghu">
-  //   <input [disabled]="isDisables" type="text" value="Raghu">
-  //   <input bind-disabled="isDisables" type="text" value="Raghu">
-  //   <input [disabled]="false" type="text" value="Raghu">-->
+    /* Property Binding
+    <input type="text" value="Raghu">
+    <input [disabled]="isDisables" type="text" value="Raghu">
+    <input bind-disabled="isDisables" type="text" value="Raghu">
+    <input [disabled]="false" type="text" value="Raghu"> */
     
 
-  //   <!--Class Binding-->
-  //   <!-  class="text-success">CodeEvaluation</h4>
-  //   <h4 [class]="sucessClass">CodeEvaluation</h4>
-  //   <h4 class="text-success" [class]="errorClass">Danger Class</h4>
-  //   <h4 class="text-special" [class]="successClass">Success class</h4>
-  //   <h4 [class.text-danger]="hasErrors">Danger class</h4>
-  //   <h4 [ngClass]="messages">Class binding</h4> -->   
-
-   
+    /* Class Binding
+    <h4>class="text-success">CodeEvaluation</h4>
+    <h4 [class]="sucessClass">CodeEvaluation</h4>
+    <h4 class="text-success" [class]="errorClass">Danger Class</h4>
+    <h4 class="text-special" [class]="successClass">Success class</h4>
+    <h4 [class.text-danger]="hasErrors">Danger class</h4>
+    <h4 [ngClass]="messages">Class binding</h4>  */  
 
 
-  //   <!-- Testing all -->
-  //   <!-- 
-  //    <input [disabled]="false" type="text" value=sun>
-  //   <h4 class=text-success>Class binging testing</h4>
-  //   <h4 [class]=errorClass>Class binding testing  2</h4>
-  //   <h4 [class.text-success]=true>class binding testing 3</h4>
-     <h4 [ngClass]=messages>Class binding testign 4</h4>
-  //   <input [id]="inpId" type="text" value="suntechnologies"> 
-  //   <input bind-id="inpId" type="text" value"suntech">
-  //   <h4 [class]="istrue">Class Binding</h4>
-  //   <h4 [class.text-success]="true">class binding 2</h4>
-  //   <h4 [ngClass]="ngClasssObject">Ng class</h4>
-  //   <h4 [style.color]="'red'">Style Binding</h4>
-  //   <h4 [style.color]="true" ? 'red' : 'blue'>Style binding</h4>
-  //   <h4 [ngStyle]="ngStyleObjectReference">Style Binding</h4>
-  //   -->
+    /*  Style  Binding 
+    <h3 [style.color]="'orange'">Style binding testing</h3>
+    <h3 [style.color]="hasErrors?'red':'green'">Style binding in Switch statement</h3>
+    <h3 [style.color]=highligtedColor>sylte binding  testing 2 with orange color</h3>
+    <h3 [ngStyle]="titleStyles">Style binding</h3> */
 
+     /* Event binding 
+     <button (click)="onClick($event)">Greeet</button>
+     {{greet}}
+     <button (click)="greet='welcome Rule1'">Greetinig</button> */ 
 
-  //   <!-- Style  Binding  -->
-  //   <h3 [style.color]="'orange'">Style binding testing</h3>
-  //   <h3 [style.color]="hasErrors?'red':'green'">Style binding in Switch statement</h3>
-  //   <h3 [style.color]=highligtedColor>sylte binding  testing 2 with orange color</h3>
-  //   <h3 [ngStyle]="titleStyles">Style binding</h3>
+    <!--  Template Reference-->
+    <input #refVar type="text">
+    <button  (click)=logOnScreen(refVar.value)>Log</button>
 
-  //   <!--  Event binding 
-  //    <button (click)="onClick($event)">Greeet</button>
-  //    {{greet}}
-  //    <button (click)="greet='welcome Rule1'">Greetinig</button> -->
+    /*  Two Way Binding 
+    <input [(ngModel)]="name1" type="text"><br>
+    {{name1}} */
 
-  //   <!--  Template Reference-->
-  //   <input #refVar type="text">
-  //   <button  (click)=logOnScreen(refVar.value)>Log</button>
+    /* Testing all 
+     
+     */
 
-  //   <!-- Two Way Binding -->
-  //   <input [(ngModel)]="name1" type="text"><br>
-  //   {{name1}}
-
-
-  //   <!-- --------------------------------------------------------- -->
-  //   <!--Structural Directive -->
-   
-    
    `,
-  templateUrl: './test.component.html',
-  styles: [`
+   styles: [`  
+  {
     div{
-      color:red
-    }
-    h3{
-      color:green
-    }
-    .text-success{
-      color:green;
-    }
-    .text-danger{
-      color:red;
-    }
-    .text-special{
-      font-style:italic;
-    }
-  `]
+    color:red
+  }
+  h3{
+    color:green
+  }
+  .text-success{
+    color:green;
+  }
+  .text-danger{
+    color:red;
+  }
+  .text-special{
+    font-style:italic;
+  }
+ } `]
+
 })
+   
+ 
 export class TestComponent implements OnInit {
 
   public name1;

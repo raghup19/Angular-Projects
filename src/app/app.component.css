@@ -5,3 +5,15 @@
 .text-failure{
     color:red;
 }
+
+.column{
+    color: yellow;
+}
+
+.row{
+    color: tomato;
+}
+
+.col{
+    background-color: rebeccapurple;
+}

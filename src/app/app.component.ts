@@ -12,7 +12,7 @@ export class AppComponent {
   public bol=true;
   public bolf=true;
 
-  
+  color="green";
 
   public messages={
     "text-success":this.bol,
