@@ -12,4 +12,7 @@
 
 <!-- <app-boostrap-practice></app-boostrap-practice> -->
 
-<app-test2></app-test2>
+<h3>{{message}}</h3>
+
+<app-test2 (childEvent)="message($event)" [parentData]="firstName"></app-test2>
+

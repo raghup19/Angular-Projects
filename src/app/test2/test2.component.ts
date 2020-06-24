@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { CompileShallowModuleMetadata } from '@angular/compiler';
+
 
 
 @Component({
@@ -9,9 +10,20 @@ import { CompileShallowModuleMetadata } from '@angular/compiler';
 })
 export class Test2Component implements OnInit {
 
+  @Input('parentData') public firstName;
+  @Output() public childEvent=new EventEmitter();
+
   name='';
 
+  color="pink";
+
+  public colors=["Blue","Green","Yello","Black"];
+
   constructor() { }
+
+  public fireEvent(){
+    this.childEvent.emit('Welcome to codeEvolution');
+  }
 
   ngIF=true;
 
@@ -31,6 +43,13 @@ export class Test2Component implements OnInit {
 
   onClickOfInput1(event){
     console.log(event);
+  }
+
+  newName="Welcome to CodeEvulution";
+
+  public person={
+    "firstName":"raghu",
+    "lastName":"patil"
   }
 
 }

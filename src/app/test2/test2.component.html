@@ -61,3 +61,47 @@
 </div> -->
 
 <!-- --------------------------------------------------------------------------------------------------------------------- -->
+<!-- NgSwitch
+
+<div class="container-fluid">
+    <div [ngSwitch]="color">
+        <div *ngSwitchCase="'red'">You have picked Red Color</div>
+        <div *ngSwitchCase="'yello'">You have picked Yellow Color</div>
+        <div *ngSwitchCase="'blue'">You have Picked Blue color</div>
+        <div *ngSwitchDefault>Please choose a color again</div>
+    </div>
+</div> -->
+
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+<!-- NgFor
+
+<div class="container-fluid">
+    <div *ngFor="let color of colors">
+        <h4>{{color}}</h4>
+    </div>
+</div> -->
+
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+<!-- ParentData
+
+<div class="container-fluid">
+    <h4>Hello {{firstName}}</h4>
+</div>
+
+ChildData
+<div class="container-fluid">
+    <button (click)="fireEvent()">Export to app component</button>
+</div> -->
+
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+Pipes
+
+<h4>{{newName | lowercase}}</h4>
+<h4>{{newName | uppercase}}</h4>
+<h4>{{newName | titlecase}}</h4>
+<h4>{{newName | slice:3:5}}</h4>
+<h4>{{person | json}}</h4>
+
+
+<h4 >{{3.456 | number : '1.2-3'}}</h4>
+<h4>{{5.34|number: '4.4-4'}}</h4>

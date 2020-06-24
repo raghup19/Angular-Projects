@@ -14,8 +14,11 @@ export class AppComponent {
 
   color="green";
 
+  public firstName="Raghu";
+
   public messages={
     "text-success":this.bol,
     "text-failure":this.bolf
   }
+  public message;
 }
