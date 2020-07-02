@@ -52,4 +52,9 @@ export class Test2Component implements OnInit {
     "lastName":"patil"
   }
 
+  public employes=[
+    {"id":1,"name":"Raghu","age":24},
+    {"id":2,"name":"Siddu","age":27}
+  ]
+
 }
