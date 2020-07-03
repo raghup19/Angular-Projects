@@ -8,6 +8,10 @@ import { FormsModule } from '@angular/forms';
 import { StructuralDirectiveComponent } from './structural-directive/structural-directive.component';
 import { BoostrapPracticeComponent } from './boostrap-practice/boostrap-practice.component';
 import { Test2Component } from './test2/test2.component';
+import { EmployeesListComponent } from './employees-list/employees-list.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { EmployeeService } from './employee.service';
+
 
 
 
@@ -18,7 +22,9 @@ import { Test2Component } from './test2/test2.component';
     TestComponent,
     StructuralDirectiveComponent,
     BoostrapPracticeComponent,
-    Test2Component
+    Test2Component,
+    EmployeesListComponent,
+    EmployeeDetailsComponent
     
   ],
   imports: [
@@ -27,7 +33,7 @@ import { Test2Component } from './test2/test2.component';
     FormsModule
     
   ],
-  providers: [],
+  providers: [ EmployeeService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
