@@ -1,5 +1,6 @@
 # Angular-Projects
-Service ==> A class with specific purpose. 
+Service ==> 
+A class with specific purpose. 
 Why we need services : 1) Share Data accross multiple components. 2)Implement application logic. 3)External interactions-connecting to database.
 Service class naming convention ==> .service.ts
 3-Steps to use Services in Angular
@@ -10,3 +11,9 @@ Service class naming convention ==> .service.ts
 Dependency Injection:
   DI is a coding patter in which a class recieves its dependencies from external sources rather than creating them itself.
   Dependency is specified under constructor.
+  
+  
+  HTTP and Observables==>
+  Observable -> A Sequence of Items that arrives asynchronously over a time. 
+  Http call -> Single Item and Single Item -> http response.
+  Observable is Http response that arrives asynchronously over a time.
