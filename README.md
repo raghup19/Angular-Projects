@@ -9,3 +9,4 @@ Service class naming convention ==> .service.ts
 
 Dependency Injection:
   DI is a coding patter in which a class recieves its dependencies from external sources rather than creating them itself.
+  Dependency is specified under constructor.
