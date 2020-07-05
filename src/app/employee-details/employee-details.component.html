@@ -2,6 +2,11 @@
     <div class="row">
         <p>Employee Details</p>
     </div>
+
+    <div class="row">
+        {{errorMsg}}
+    </div>
+
     <div class="row">
         <ul *ngFor="let employee of employee">
             <li>{{employee.id}}-{{employee.name}}-{{employee.age}}</li>

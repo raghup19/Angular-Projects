@@ -4,6 +4,10 @@
     </div>
 
     <div class="row">
+        {{errorMsg}}
+    </div>
+
+    <div class="row">
         <ul *ngFor="let employee of employees">
             <li>{{employee.name}}</li>
         </ul>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../employee.service';
+import { error } from 'protractor';
 
 @Component({
   selector: 'app-employee-details',
@@ -10,10 +11,12 @@ export class EmployeeDetailsComponent implements OnInit {
 
   public employee=[];
 
+  public errorMsg;
+
   constructor(private _employeeService : EmployeeService) { }
 
   ngOnInit(): void {
-    this._employeeService.getEmployees().subscribe(data => this.employee =data);
+    this._employeeService.getEmployees().subscribe(data => this.employee =data, error => this.errorMsg= error);
   }
 
 }
