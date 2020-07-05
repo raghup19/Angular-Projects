@@ -11,6 +11,7 @@ import { Test2Component } from './test2/test2.component';
 import { EmployeesListComponent } from './employees-list/employees-list.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeService } from './employee.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -30,7 +31,8 @@ import { EmployeeService } from './employee.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
     
   ],
   providers: [ EmployeeService ],

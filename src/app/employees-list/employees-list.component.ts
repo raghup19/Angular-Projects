@@ -13,7 +13,7 @@ export class EmployeesListComponent implements OnInit {
   constructor(private _empoyeeService : EmployeeService) { }
 
   ngOnInit(): void {
-    this.employees=this._empoyeeService.getEmployees();
+    this._empoyeeService.getEmployees().subscribe(data => this.employees = data);
   }
 
 }
